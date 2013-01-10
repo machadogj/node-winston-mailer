@@ -22,24 +22,6 @@ An email transport based on mailer for [winston][0].
 
 The Mail transport uses [mailer](http://github.com/Marak/node_mailer.git) behind the scenes.  Options are the following:
 
-
-  /** buffering */
-  this.maxBufferItems    = options.maxBufferItems         || 100;
-  this.maxBufferTimeSpan = options.maxBufferTimeSpan      || 60 * 1000;
-  this.buffer  = [];
-  this.flushId = setTimeout(this.flush.bind(this), this.maxBufferTimeSpan);
-
-  /** mailer options */
-  this.opts  = {
-    username        : options.username,
-    password        : options.password,
-    port            : options.port,
-    host            : options.host,
-    authentication  : 'login',
-    to              : options.to,
-    from            : options.from || "winston@" + os.hostname() + '.com',
-    prefix          : options.prefix || '[winston]'
-  };
 * __to:__ The address(es) you want to send to. *[required]*
 * __from:__ The 'from' address (default: `winston@[server-host-name].com`)
 * __host:__ SMTP server hostname (default: localhost)
