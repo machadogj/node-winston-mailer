@@ -1,0 +1,21 @@
+{
+  "name": "winston-mailer",
+  "version": "0.0.1",
+  "description": "Winston transport based on mailer. It buffers errors, and packs them in one email if necessary.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/machadogj/node-winston-mailer.git"
+  },
+  "keywords": [
+    "winston",
+    "email",
+    "mail",
+    "mailer"
+  ],
+  "author": "Gustavo Machado",
+  "license": "BSD"
+}
